@@ -3,7 +3,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class PalindromeTests {
+class PalindromeTest {
     @Test
     @DisplayName("Reverse String")
     void reverse() {

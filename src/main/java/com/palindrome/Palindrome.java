@@ -23,13 +23,12 @@ public class Palindrome {
     }
     /**
      * Outputs whether the string entered is a palindrome.
-     * @param b Type boolean to pass results from {@link #isPalindrome(String, String)}
      * @param userInput String entered by the user.
-     * @param reversedInput Entered string reversed.
      */
-    protected static void output(Boolean b, String userInput, String reversedInput){
-        String str = "You have entered: " + userInput + "\nYour entry reversed: " + reversedInput;
-        if(!b){
+    protected static void output(String userInput){
+        String reversedInput = reverse(userInput);
+        String str = "Your entry reversed: " + reversedInput;
+        if(!isPalindrome(userInput, reversedInput)){
             System.out.print(str + "\nYou did not enter a palindrome :(");
         }else{
             System.out.print(str + "\nYou have entered a palindrome :)");

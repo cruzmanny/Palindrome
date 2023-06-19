@@ -11,6 +11,6 @@ public class Main {
             userInput = input.nextLine();
         }
         input.close();
-        Palindrome.output(Palindrome.isPalindrome(userInput, Palindrome.reverse(userInput)), userInput, Palindrome.reverse(userInput));
+        Palindrome.output(userInput);
     }
 }
